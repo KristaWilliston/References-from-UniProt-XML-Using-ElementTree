@@ -1,1 +1,5 @@
 # References-from-UniProt-XML-Using-ElementTree
+
+The results are the contents of the reference tag from the Q9H400.xml file.
+
+I imported the file and found the root.  Then I found the entry from the root.  To find the references, I iterated through entry and stored the references to a list.  I then iterated through the references to find the element citation tag to use later.  To find the scopes, I iterated through the references and stored the scopes as text to a list.  To find the authors, I iterated through the citations and saved the names of each person inside the authors tag into a list.  To find the dbReferences, I iterated through the citation tag and stored the dbReferences type and id attributes of the references to a list.  To find the title, I iterated through the citation tag and saved the titles as text of each reference within the title variable.  I saved all the attributes of citation to variables.  I made a dictionary containing all of the parts of the reference that needed to be printed out.  I then printed out the references in order based off of their key numbers and all of the different parts that make up the reference.
